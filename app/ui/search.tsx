@@ -17,7 +17,6 @@ export default function Search({ placeholder }: { placeholder: string }) {
     } else {
       params.delete('query');
     }
-    console.log(searchParams.get('query')?.toString());
 
     replace(`${pathname}?${params.toString()}`);
   }, 300);
